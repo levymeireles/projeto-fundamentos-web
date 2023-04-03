@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="./contato.css">
+    <title>HYPE</title>
+    <link rel="icon" href="/assets/imagens/logo-hype.png">
+
+</head>
+
+<body>
+    <nav id="menu-h">
+        <img class="logo" src="/assets/imagens/logo-hype.png" />
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../sobre/sobre.html">Sobre</a></li>
+            <li><a href="../quem-somos/quem-somos.html">Quem Somos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="../produtos/produtos.html">Produtos</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="title">Contato</h1>
+    <div class="container">
+        <p class="text-contact">Para entrar em contato conosco por favor preencha o formulário abaixo:</p>
+        <div class="container-form">
+            <form #form_contact action="https://formspree.io/f/mjvdajeo" method="POST">
+                <div class="form-group">
+                    <label class="text-input">Nome
+                        <input type="text" name="name" class="form-control" placeholder="Digite seu nome">
+                    </label>
+                    <label class="text-input">Email
+                        <input type="email" name="email" class="form-control" placeholder="Email para contato">
+                    </label>
+                    <label class="text-input"> Assunto
+                        <input type="text" name="subject" class="form-control" placeholder="Motivo do contato">
+                    </label>
+                    <label class="text-input"> Descrição
+                        <textarea name="description" rows="3" cols="50" class="form-control"
+                            placeholder="Breve resumo da solicitação"></textarea>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
