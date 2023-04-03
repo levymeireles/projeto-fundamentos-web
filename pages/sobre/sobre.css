@@ -51,6 +51,7 @@ html {
 .container-image-about {
     width: 80%;
     height: auto;
+    margin-left: 7%;
     margin-top: 3%;
 }
 
