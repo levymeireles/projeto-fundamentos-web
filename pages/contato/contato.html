@@ -28,27 +28,36 @@
     <div class="container">
         <p class="text-contact">Para entrar em contato conosco por favor preencha o formulário abaixo:</p>
         <div class="container-form">
-            <form #form_contact action="https://formspree.io/f/mjvdajeo" method="POST">
+            <form id="form_contact" action="https://formspree.io/f/mjvdajeo" method="POST">
                 <div class="form-group">
                     <label class="text-input">Nome
-                        <input type="text" name="name" class="form-control" placeholder="Digite seu nome">
+                        <input type="text" name="name" class="form-control" placeholder="Digite seu nome" required>
                     </label>
                     <label class="text-input">Email
-                        <input type="email" name="email" class="form-control" placeholder="Email para contato">
+                        <input type="email" name="email" class="form-control" placeholder="Email para contato" required>
                     </label>
                     <label class="text-input"> Assunto
-                        <input type="text" name="subject" class="form-control" placeholder="Motivo do contato">
+                        <input type="text" name="subject" class="form-control" placeholder="Motivo do contato" required>
                     </label>
                     <label class="text-input"> Descrição
                         <textarea name="description" rows="3" cols="50" class="form-control"
-                            placeholder="Breve resumo da solicitação"></textarea>
+                            placeholder="Breve resumo da solicitação" required></textarea>
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="button" onclick="submitForm()">Enviar</button>
             </form>
         </div>
 
     </div>
 </body>
+
+<script type="text/javascript">
+    function submitForm() {
+        var frm = document.getElementById('form_contact');
+        frm.submit();
+        frm.reset();
+        return false;
+    }
+</script>
 
 </html>
