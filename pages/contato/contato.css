@@ -77,3 +77,15 @@ label.text-input{
     color: #FFFFFF;
     font-weight: 600;
 }
+
+.container_maps{
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+.container_maps .text_maps{
+    font-weight: 700;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: #FFFFFF;
+}
